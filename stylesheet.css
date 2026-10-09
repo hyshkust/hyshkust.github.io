@@ -305,16 +305,45 @@ footer p { margin: 6px 0; }
 
 
 @media (max-width: 600px) {
-  .site-container { padding: 20px; }
-  .profile-header { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-bottom: 32px; }
-  h1 { font-size: 29px; }
-  .profile-photo { width: 128px; margin: 0 auto; }
-  .publication { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 18px 0 28px; }
-  .publication-image { width: min(220px, 100%); margin: 0 auto; }
-  .publication-thumbnail { width: 100%; }
+  .site-container { padding: 20px 14px; }
+  .profile-header { grid-template-columns: minmax(0, 1fr) 88px; gap: 16px; margin-bottom: 28px; }
+  h1 { font-size: 26px; }
+  h1 span[lang="zh"] { white-space: nowrap; }
+  .profile-photo { width: 88px; margin: 0; }
+  .contact-links { gap: 4px 8px; }
+  .publication {
+    --publication-image-size: 104px;
+    grid-template-columns: var(--publication-image-size) minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    padding: 18px 0;
+    font-size: 14.5px;
+    line-height: 1.45;
+  }
+  .publication-image {
+    width: var(--publication-image-size);
+    height: var(--publication-image-size);
+    margin: 0;
+  }
+  .publication-thumbnail { width: 100%; height: 100%; object-fit: contain; }
+  .publication-details { min-width: 0; }
+  .paper-title { font-size: 15px; line-height: 1.35; }
+  .paper-summary { margin-top: 8px; }
+  .github-stars { max-width: 100%; overflow: hidden; }
   .experience-header { flex-direction: column; gap: 2px; }
   .experience-item { padding-left: 18px; }
   .service-row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
   .experience-company { align-items: flex-start; }
   footer { text-align: left; }
+}
+
+@media (max-width: 400px) {
+  .publication { --publication-image-size: 92px; gap: 12px; }
+}
+
+@media (max-width: 350px) {
+  .site-container { padding-right: 12px; padding-left: 12px; }
+  .profile-header { grid-template-columns: minmax(0, 1fr) 80px; gap: 12px; }
+  .profile-photo { width: 80px; }
+  .publication { --publication-image-size: 80px; }
 }
