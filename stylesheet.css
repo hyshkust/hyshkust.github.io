@@ -1,6 +1,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: italic;
   font-weight: 400;
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
@@ -9,6 +10,7 @@
 /* latin */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: italic;
   font-weight: 400;
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
@@ -17,6 +19,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: italic;
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
@@ -25,6 +28,7 @@
 /* latin */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: italic;
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
@@ -33,6 +37,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
@@ -41,6 +46,7 @@
 /* latin */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
@@ -49,6 +55,7 @@
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
@@ -57,82 +64,89 @@
 /* latin */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
-}
-
-strong {
+/* Shared layout and readable, keyboard-accessible links. */
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body {
+  margin: 0;
+  background: #fff;
+  color: #222;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
 }
-
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+a { color: #1772d0; text-decoration: none; }
+a:hover { color: #8c4b08; text-decoration: underline; }
+a:focus-visible {
+  color: #8c4b08;
+  outline: 2px solid #1772d0;
+  outline-offset: 4px;
+  border-radius: 2px;
+  text-decoration: underline;
 }
-
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
-}
-
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
+img { max-width: 100%; }
+sup { font-size: 0.75em; line-height: 0; }
+p { margin: 0 0 14px; }
+h1, h2, h3, h4 { line-height: 1.3; }
+h1 { margin: 0 0 18px; font-size: 32px; font-weight: 400; text-align: center; }
+h2 { margin: 0 0 18px; font-size: 22px; font-weight: 400; }
+.site-container { width: 100%; max-width: 840px; margin: 0 auto; padding: 24px 20px; }
+.skip-link {
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  top: 8px;
+  left: 16px;
+  z-index: 10;
+  padding: 8px 14px;
+  background: #fff;
+  transform: translateY(-180%);
 }
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.skip-link:focus { transform: translateY(0); }
+.profile-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  gap: 32px;
+  align-items: center;
+  margin: 8px 0 38px;
 }
-
-span.highlight {
-  background-color: #ffffd0;
+.profile-photo { display: block; width: 160px; }
+.profile-photo img { display: block; width: 100%; height: auto; }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 12px; }
+.hiring-note { margin-bottom: 0; font-weight: 700; }
+.hiring-note a { overflow-wrap: anywhere; }
+.contribution-legend { margin: 20px 0 8px; color: #555f6c; font-size: 13px; }
+.publication {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 18px 0 24px;
 }
+.publication-image { display: block; }
+.publication-thumbnail { display: block; width: 160px; max-width: 100%; height: auto; }
+.paper-title { margin: 0 0 4px; font-size: 14px; font-weight: 700; }
+.paper-authors, .paper-venue { margin: 0; }
+.paper-links { margin: 2px 0 0; line-height: 1.7; }
+.paper-links a { white-space: nowrap; }
+.link-separator { margin: 0 2px; color: #626b76; }
+.paper-summary { margin: 10px 0 0; }
+.paper-highlight { color: #a52b24; font-weight: 700; }
+.github-stars { display: inline-flex; min-width: 90px; min-height: 20px; vertical-align: middle; align-items: center; }
+.github-stars img { display: block; height: 20px; width: auto; }
+.challenge { padding-top: 0; padding-bottom: 0; }
+footer { margin-top: 38px; color: #626b76; text-align: right; font-size: 12px; }
+footer p { margin: 6px 0; }
 
 /* Career and academic service sections. */
 .profile-section {
-  padding: 20px;
+  margin-top: 36px;
+  padding: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   line-height: 1.6;
 }
@@ -289,22 +303,18 @@ span.highlight {
   color: #626b76;
 }
 
+
 @media (max-width: 600px) {
-  .experience-header {
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .experience-item {
-    padding-left: 18px;
-  }
-
-  .service-row {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 4px;
-  }
-
-  .service-affiliation {
-    display: inline;
-  }
+  .site-container { padding: 20px; }
+  .profile-header { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-bottom: 32px; }
+  h1 { font-size: 29px; }
+  .profile-photo { width: 128px; margin: 0 auto; }
+  .publication { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 18px 0 28px; }
+  .publication-image { width: min(220px, 100%); margin: 0 auto; }
+  .publication-thumbnail { width: 100%; }
+  .experience-header { flex-direction: column; gap: 2px; }
+  .experience-item { padding-left: 18px; }
+  .service-row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .experience-company { align-items: flex-start; }
+  footer { text-align: left; }
 }
