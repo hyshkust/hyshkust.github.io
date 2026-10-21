@@ -20,7 +20,7 @@ Open `http://127.0.0.1:8000` in a browser. `index.html` contains the content; `s
 - Use `loading="lazy"` and `decoding="async"` for figures below the first publication. Keep the portrait and first publication image eager.
 - Update the footer date and review the result at desktop and mobile widths.
 
-The two newest figures are `images/egoalign.webp` and `images/past-as-state.webp`; EgoAlign links to `images/egoalign-pipeline.webp` for its full diagram.
+Recent figures include `images/lambda0.webp`, `images/egoalign.webp`, and `images/past-as-state.webp`. The λ₀ thumbnail shows the HumanVerse panel from Figure 1 on page 1 of [the report](https://arxiv.org/pdf/2610.18950); it links to the complete figure in `images/lambda0-overview.webp`. EgoAlign links to `images/egoalign-pipeline.webp` for its full diagram.
 
 ## Regenerating older thumbnails
 

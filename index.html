@@ -48,19 +48,32 @@
     <main id="main-content" tabindex="-1">
       <section id="research" aria-labelledby="research-heading">
         <h2 id="research-heading">Research</h2>
-        <p>I'm interested in Embodied AI, 3D Computer Vision, AIGC, and Digital Avatar.</p>
+        <p>I'm interested in Embodied AI, Multimodal Generation, and 3D Vision.</p>
         <p class="contribution-legend">* denotes equal contribution; <sup>^</sup> denotes intern student; † denotes project leader; ✉ denotes corresponding author.</p>
         <div class="publication-list">
+      <article class="publication" id="lambda0" aria-labelledby="lambda0-title">
+        <a class="publication-image" href="images/lambda0-overview.webp" aria-label="View the full HumanVerse and lambda-zero overview">
+          <img class="publication-thumbnail" src="images/lambda0.webp" alt="HumanVerse's 500-hour dataset: a wearable capture setup with whole-body motions and open-world tasks." width="428" height="480" loading="eager" decoding="async">
+        </a>
+        <div class="publication-details">
+          <h3 class="paper-title" id="lambda0-title"><a href="https://arxiv.org/abs/2610.18950">λ₀: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation</a></h3>
+          <p class="paper-authors">Lambda-humanoid Team</p>
+          <p class="paper-venue"><em>Technical Report, 2026</em></p>
+          <p class="paper-links"><a href="https://lambdahumanoid.github.io/">project page</a> <span class="link-separator" aria-hidden="true">/</span> <a href="https://arxiv.org/abs/2610.18950">paper</a> <span class="link-separator" aria-hidden="true">/</span> <a href="https://github.com/LambdaHumanoid/openlambda">code</a></p>
+          <p class="paper-summary">λ₀ learns whole-body humanoid loco-manipulation through egocentric pretraining, mid-training on the 500-hour HumanVerse dataset with human-to-humanoid alignment, and robot post-training. Scaling whole-body human data improves downstream task performance.</p>
+        </div>
+      </article>
+
       <article class="publication" id="egoalign" aria-labelledby="egoalign-title">
         <a class="publication-image" href="images/egoalign-pipeline.webp" aria-label="View the full EgoAlign pipeline">
-          <img class="publication-thumbnail" src="images/egoalign.webp" alt="Human-to-robot scale alignment followed by causal state reconstruction in EgoAlign." width="640" height="468" loading="eager" decoding="async">
+          <img class="publication-thumbnail" src="images/egoalign.webp" alt="Human-to-robot scale alignment followed by causal state reconstruction in EgoAlign." width="640" height="468" loading="lazy" decoding="async">
         </a>
         <div class="publication-details">
           <h3 class="paper-title" id="egoalign-title"><a href="https://arxiv.org/abs/2609.38046">EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation</a></h3>
           <p class="paper-authors">Yiming Jiang<sup>^</sup>, Jin Chen, Chongyang Xu, Yilun Chen<sup>†</sup>, Aimin Hao<sup>✉</sup>, <strong>Yisheng He</strong><sup>†✉</sup></p>
           <p class="paper-venue"><em>Technical Report, 2026</em></p>
           <p class="paper-links"><a href="https://lambdahumanoid.github.io/EgoAlign/">project page</a> <span class="link-separator" aria-hidden="true">/</span> <a href="https://arxiv.org/abs/2609.38046">paper</a> <span class="link-separator" aria-hidden="true">/</span> <a href="https://github.com/LambdaHumanoid/EgoAlign">code</a></p>
-          <p class="paper-summary">EgoAlign adapts egocentric human demonstrations through controller-aware motion alignment and causal robot-state reconstruction. This enables human-only task training of vision-language-action models and zero-shot deployment for long-range humanoid loco-manipulation.</p>
+          <p class="paper-summary">EgoAlign adapts egocentric human demonstrations through controller-aware motion alignment and causal robot-state reconstruction, enabling human-only task training of VLA models and zero-shot deployment for long-range humanoid loco-manipulation. <em>Cornerstone for λ₀.</em></p>
         </div>
       </article>
 
@@ -130,6 +143,19 @@
         </div>
       </article>
 
+      <article class="publication" id="mulsmo" aria-labelledby="mulsmo-title">
+        <a class="publication-image" href="images/MulsMo.png" aria-label="View the full-size figure for MulSMo: Multimodal Stylized Motion Generation by Bidirectional Control Flow">
+          <img class="publication-thumbnail" src="images/thumbnails/mulsmo.webp" alt="Character motion controlled by a reference movement, the text &quot;Depressed&quot;, and a dinosaur image." width="480" height="530" loading="lazy" decoding="async">
+        </a>
+        <div class="publication-details">
+          <h3 class="paper-title" id="mulsmo-title"><a href="https://arxiv.org/pdf/2412.09901">MulSMo: Multimodal Stylized Motion Generation by Bidirectional Control Flow</a></h3>
+          <p class="paper-authors">Zhe Li<sup>^</sup>, <strong>Yisheng He</strong>, Zhong Lei, Weichao Shen, Qi Zuo, Lingteng Qiu, Shenhao Zhu, Zilong Dong, Laurence T. Yang, Weihao Yuan</p>
+          <p class="paper-venue"><em>IEEE TIP, 2026</em></p>
+          <p class="paper-links"><a href="https://arxiv.org/pdf/2412.09901">paper</a></p>
+          <p class="paper-summary">We build a bidirectional control flow between the style and the content for stylized motion generation and enable multimodal style control including text, image, and style motions.</p>
+        </div>
+      </article>
+
       <article class="publication" id="ldcm" aria-labelledby="ldcm-title">
         <a class="publication-image" href="images/ldcm.png" aria-label="View the full-size figure for LDCM: Large Depth Completion Model from Sparse Observations">
           <img class="publication-thumbnail" src="images/thumbnails/ldcm.webp" alt="Three scenes shown as photographs, sparse depth observations, completed depth maps, and colored 3D reconstructions." width="480" height="457" loading="lazy" decoding="async">
@@ -192,19 +218,6 @@
           <p class="paper-venue"><em>ICLR, 2025 </em></p>
           <p class="paper-links"><a href="https://aigc3d.github.io/LaMP/">project page</a> <span class="link-separator" aria-hidden="true">/</span> <a href="https://arxiv.org/pdf/2410.07093">paper</a> <span class="link-separator" aria-hidden="true">/</span> <a href="https://github.com/gentlefress/LaMP">code</a> <span class="github-stars"><img alt="GitHub stars for gentlefress/LaMP" src="https://img.shields.io/github/stars/gentlefress/LaMP?style=social" loading="lazy" decoding="async"></span></p>
           <p class="paper-summary">LaMP is a language-motion pretraining model that advances text-to-motion generation, motion-text retrieval, and motion captioning through aligned language-motion representation learning.</p>
-        </div>
-      </article>
-
-      <article class="publication" id="mulsmo" aria-labelledby="mulsmo-title">
-        <a class="publication-image" href="images/MulsMo.png" aria-label="View the full-size figure for MulSMo: Multimodal Stylized Motion Generation by Bidirectional Control Flow">
-          <img class="publication-thumbnail" src="images/thumbnails/mulsmo.webp" alt="Character motion controlled by a reference movement, the text &quot;Depressed&quot;, and a dinosaur image." width="480" height="530" loading="lazy" decoding="async">
-        </a>
-        <div class="publication-details">
-          <h3 class="paper-title" id="mulsmo-title"><a href="https://arxiv.org/pdf/2412.09901">MulSMo: Multimodal Stylized Motion Generation by Bidirectional Control Flow</a></h3>
-          <p class="paper-authors">Zhe Li<sup>^</sup>, <strong>Yisheng He</strong>, Zhong Lei, Weichao Shen, Qi Zuo, Lingteng Qiu, Shenhao Zhu, Zilong Dong, Laurence T. Yang, Weihao Yuan</p>
-          <p class="paper-venue"><em>T-IP, 2026</em></p>
-          <p class="paper-links"><a href="https://arxiv.org/pdf/2412.09901">paper</a></p>
-          <p class="paper-summary">We build a bidirectional control flow between the style and the content for stylized motion generation and enable multimodal style control including text, image, and style motions.</p>
         </div>
       </article>
 
